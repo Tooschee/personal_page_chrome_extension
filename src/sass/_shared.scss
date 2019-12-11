@@ -1,0 +1,14 @@
+.margin-vertical {
+  margin-top: $margin-default;
+  margin-bottom: $margin-default;
+}
+
+.is {
+  &-title-case {
+    text-transform: capitalize;
+  }
+
+  &-strikethrough {
+    text-decoration: line-through;
+  }
+}

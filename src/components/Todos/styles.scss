@@ -1,0 +1,42 @@
+@import '../../sass/variables.scss';
+
+.todos {
+  margin-top: 30px;
+
+  &__input {
+    background-color: darken($background, 2%);
+    margin: 12px 0;
+    color: $primary;
+    border: 1px solid lighten($background, 12%);
+    transition: all $animation-time-quick;
+
+    &::placeholder {
+      color: $primary;
+    }
+
+    &:focus {
+      outline-width: 0;
+    }
+
+    &:hover {
+      border: 1px solid lighten($background, 20%);
+    }
+  }
+
+  &__items {
+    margin-top: 10px;
+    max-height: 660px;
+    overflow-y: auto;
+  }
+
+  &__content {
+    word-break: break-all;
+  }
+
+  &__item+&__item {
+    border-top: 1px solid darken($primary, 30%);
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+}

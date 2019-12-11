@@ -1,0 +1,74 @@
+@import '../../sass/variables.scss';
+
+.notes {
+  max-width: 100%;
+
+  &__input {
+    border: 1px solid lighten($background, 12%);
+    transition: all $animation-time-quick;
+    display: inline-block;
+    width: 100%;
+    max-width: 1344px;
+    line-height: 1.3rem;
+    padding: 6px 8px;
+    margin: 15px 0;
+    word-break: break-all;
+  }
+
+
+  &:focus {
+    outline-width: 0;
+    border: 1px solid lighten($background, 20%);
+    background: darken($background, 5%);
+  }
+
+  &__options {
+    text-align: right;
+    margin: -16px 0 0 0;
+  }
+
+  &__option {
+    background: darken($background, 4%);
+    border: none;
+    color: $primary;
+    padding: 6px;
+    font-size: 1.2rem;
+
+    &:focus {
+      outline-width: 0;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &--less-than-4 {
+      justify-content: flex-start;
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: 24%;
+    margin: 4px 4px;
+    word-break: break-all;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid lighten($background, 16%);
+    border-radius: 4px;
+
+    &-options {
+      border-top: 1px solid lighten($background, 16%);
+      background-color: darken($background, 3%);
+      padding: 8px;
+      text-align: right;
+    }
+
+    &-content {
+      padding: 8px;
+    }
+  }
+}

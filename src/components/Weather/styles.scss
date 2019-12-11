@@ -1,0 +1,32 @@
+@import '../../sass/owfont-master/css/owfont-regular.css';
+
+.weather {
+
+  &__ico {
+    text-align: center;
+  }
+
+  &__icon {
+    font-family: 'owfont';
+    font-size: 180px;
+  }
+
+  &__temperature {
+    font-size: 100px;
+    display: inline-block;
+
+    &-celsius {
+      font-size: 50px;
+      line-height: 100px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import './variables.scss';
+@import '~bulma';
+@import './_shared.scss';
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $background;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: darken($background, 5%);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: $primary;
+}
+
+*::-webkit-scrollbar-corner {
+  background: darken($background, 30%);
+}
+
+
+.head-1 {
+  color: lighten($primary, 15%);
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
