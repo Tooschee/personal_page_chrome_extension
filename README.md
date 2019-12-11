@@ -7,6 +7,9 @@ An extension, that switches your default chrome tab page, with your own, featuri
 * todo list (based on your firebase real time database)
 * small, quick notes (based on your firebase real time database)
 
+# how it looks like
+![how it looks like](https://raw.githubusercontent.com/Tooschee/personal_page_chrome_extension/master/screen.png)
+
 # what you need:
 * your own `firebase` account with databases (free plan should be fine):
   * `todo`
