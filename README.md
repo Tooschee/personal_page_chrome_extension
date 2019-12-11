@@ -2,7 +2,7 @@
 An extension, that switches your default chrome tab page, with your own, featuring your:
 * favourite links (editable through `config.js`)
 * hour and a date
-* weather and temperature (editable from `config.js`)
+* weather and temperature (to setup a proper country and town - edit in `config.js`)
 * google calendar summary for 3 days
 * todo list (based on your firebase real time database)
 * small, quick notes (based on your firebase real time database)
@@ -14,8 +14,9 @@ An extension, that switches your default chrome tab page, with your own, featuri
 * your own `firebase` account with databases (free plan should be fine):
   * `todo`
   * `quicknotes`
-* google developer `APIKEY` + `OAuth 2.0 client ID` for your app
-* upload (after modifications) your extension to chromse store following [those rules](https://developer.chrome.com/extensions/tut_oauth#upload_to_dashboard)
+* **[openweather](https://openweathermap.org/api)** APIkey and credentials
+* google developer `APIkey` + `OAuth 2.0 client ID` for your app
+* upload (after modifications) your extension to chromse store following **[those rules](https://developer.chrome.com/extensions/tut_oauth#upload_to_dashboard)**
 * `key` parameter (from `more info` button in extension list) of your extension should be edited into `manifest.json`
 
 # how to distribute through many computers
@@ -27,10 +28,10 @@ the `config.js` file consists all the credential you need to have (or create on 
 
 
 # disclaimer
-You propably wont be able to launch it, without some technical skills.
+You propably wont be able to launch it, without some technical skills, so if needed, i can help.
 
 
 # disclaimer 2
-This is an outcome of a ~10h hackaton with a friend(who is interested in going further into web dev) to show the possibilities of React, Firebase and Google Apis.
-The extension is published as `as is` - do whatever you want with it, if you like how it's done, let me know :).
+This is an outcome of a ~10h hackaton with a friend (who is interested in going further into web dev) to show the possibilities of React, Firebase and Google Apis.
+The extension is published as `as is` - do whatever you want with it, if you like how it's done, let me know.
 
